@@ -1,0 +1,62 @@
+@use 'colors' as *;
+
+#logo {
+  padding: 1.5em;
+  width: 40%;
+  img {
+    width: 100%;
+  }
+}
+.hero {
+  .hero-img {
+    background: url("/images/hero-mobile.jpg") center center/cover;
+    width: 100%;
+    height: 250px;
+  }
+
+  .hero-info {
+    width: 85%;
+    margin: 0 auto;
+    text-align: center;
+    h1 {
+      .highlight {
+        color: $Desaturated-Red;
+        font-weight: 300;
+      }
+      color: $Dark-Grayish-Red;
+      font-size: 2rem;
+      letter-spacing: 0.5rem;
+      padding-top: 2em;
+    }
+    p {
+      color: $Desaturated-Red;
+      line-height: 1.5;
+      padding: 2em 0;
+      font-weight: 300;
+    }
+  }
+
+  .form {
+    margin-bottom: 3rem;
+    input {
+      border: 1px $Desaturated-Red solid;
+      border-radius: 5rem;
+      width: 100%;
+      padding: 1em 2em;
+      color: $Desaturated-Red;
+      &:focus {
+        outline: none;
+      }
+    }
+    .btn {
+      border: none;
+      cursor: pointer;
+      position: absolute;
+      right: 29px;
+      padding: 0.8em 1.8em;
+      border-radius: 1.5rem;
+      background: $Btn-Gradient;
+      box-shadow: -5px 10px 30px $Desaturated-Red;
+    }
+  }
+}
