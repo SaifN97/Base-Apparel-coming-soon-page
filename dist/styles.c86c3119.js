@@ -189,7 +189,7 @@ var reloadCSS = require('_css_loader');
 
 module.hot.dispose(reloadCSS);
 module.hot.accept(reloadCSS);
-},{"C:\\Users\\91816\\Desktop\\drawingBoard\\FrontendMentor\\8.base-apparel-coming-soon\\src\\images\\hero-mobile.jpg":[["hero-mobile.526d61cc.jpg","images/hero-mobile.jpg"],"images/hero-mobile.jpg"],"_css_loader":"../node_modules/parcel-bundler/src/builtins/css-loader.js"}],"../node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
+},{"C:\\Users\\91816\\Desktop\\drawingBoard\\FrontendMentor\\8.base-apparel-coming-soon\\src\\images\\hero-mobile.jpg":[["hero-mobile.526d61cc.jpg","images/hero-mobile.jpg"],"images/hero-mobile.jpg"],"C:\\Users\\91816\\Desktop\\drawingBoard\\FrontendMentor\\8.base-apparel-coming-soon\\src\\images\\hero-desktop.jpg":[["hero-desktop.01ed746a.jpg","images/hero-desktop.jpg"],"images/hero-desktop.jpg"],"_css_loader":"../node_modules/parcel-bundler/src/builtins/css-loader.js"}],"../node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 var OldModule = module.bundle.Module;

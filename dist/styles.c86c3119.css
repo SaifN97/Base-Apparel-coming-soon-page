@@ -81,4 +81,38 @@ main {
   box-shadow: -5px 10px 30px #ce9797;
 }
 
+@media (min-width: 800px) {
+  main {
+    max-width: 100%;
+  }
+
+  #logo {
+    position: absolute;
+    left: 113px;
+    padding: 1.5em;
+    width: 200px;
+  }
+  #logo img {
+    width: 80%;
+  }
+
+  .hero {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+  }
+  .hero .hero-img {
+    background: url("/hero-desktop.01ed746a.jpg") center center/cover;
+    width: 40%;
+    height: 100vh;
+  }
+  .hero .hero-info {
+    width: 35%;
+    text-align: left;
+  }
+  .hero .hero-info p {
+    padding: 0.2em 0 1.5em 0;
+  }
+}
+
 /*# sourceMappingURL=/styles.c86c3119.css.map */
