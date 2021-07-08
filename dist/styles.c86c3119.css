@@ -10,6 +10,11 @@ body {
   background: linear-gradient(135deg, white, #fff5f5);
 }
 
+main {
+  max-width: 410px;
+  margin: 0 auto;
+}
+
 #logo {
   padding: 1.5em;
   width: 40%;
@@ -47,22 +52,30 @@ body {
 .hero .form {
   margin-bottom: 3rem;
 }
-.hero .form input {
+.hero .form .email {
+  position: relative;
   border: 1px #ce9797 solid;
   border-radius: 5rem;
   width: 100%;
   padding: 1em 2em;
-  color: #ce9797;
 }
-.hero .form input:focus {
+.hero .form .email input {
+  width: 100%;
+  color: #ce9797;
+  outline: none;
+  border: none;
+}
+.hero .form .email:focus {
   outline: none;
 }
 .hero .form .btn {
   border: none;
   cursor: pointer;
   position: absolute;
-  right: 29px;
-  padding: 0.8em 1.8em;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  padding: 1em 2em;
   border-radius: 1.5rem;
   background: linear-gradient(135deg, #f8bfbf, #ee8c8c);
   box-shadow: -5px 10px 30px #ce9797;

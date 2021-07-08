@@ -1,5 +1,8 @@
 @use 'colors' as *;
-
+main {
+  max-width: 410px;
+  margin: 0 auto;
+}
 #logo {
   padding: 1.5em;
   width: 40%;
@@ -38,12 +41,18 @@
 
   .form {
     margin-bottom: 3rem;
-    input {
+    .email {
+      position: relative;
       border: 1px $Desaturated-Red solid;
       border-radius: 5rem;
       width: 100%;
       padding: 1em 2em;
-      color: $Desaturated-Red;
+      & input {
+        width: 100%;
+        color: $Desaturated-Red;
+        outline: none;
+        border: none;
+      }
       &:focus {
         outline: none;
       }
@@ -52,8 +61,10 @@
       border: none;
       cursor: pointer;
       position: absolute;
-      right: 29px;
-      padding: 0.8em 1.8em;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      padding: 1em 2em;
       border-radius: 1.5rem;
       background: $Btn-Gradient;
       box-shadow: -5px 10px 30px $Desaturated-Red;
