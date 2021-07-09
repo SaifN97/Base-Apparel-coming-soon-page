@@ -12,6 +12,7 @@
     }
   }
   .hero {
+    position: relative;
     display: flex;
     flex-direction: row-reverse;
     align-items: center;
@@ -25,6 +26,16 @@
       text-align: left;
       p {
         padding: 0.2em 0 1.5em 0;
+      }
+      .background {
+        display: block;
+        width: 60%;
+        overflow: hidden;
+        position: absolute;
+        top: -52%;
+        left: 0;
+        bottom: 0;
+        z-index: -1;
       }
     }
   }

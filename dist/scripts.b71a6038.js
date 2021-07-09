@@ -118,23 +118,31 @@ parcelRequire = (function (modules, cache, entry, globalName) {
 
   return newRequire;
 })({"scripts.js":[function(require,module,exports) {
-input = document.querySelector("#email");
-btn = document.querySelector(".btn");
-btn.addEventListner("click", function () {
-  return ValidateEmail(input);
-});
+var form = document.querySelector(".form");
+var emailBox = document.querySelector(".email");
+var email = document.getElementById("email").value;
+var input = document.getElementById("email");
+var text = document.querySelector(".text");
+var errorIcon = document.querySelector(".error");
+var pattern = /^[^ ]+@[^ ]+\.[a-z]{2,3}$/;
+input.oninput = validation();
 
-function ValidateEmail(input) {
-  var mailformat = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
-
-  if (input.value.match(mailformat)) {
-    alert("Valid email address!");
-    document.form1.text1.focus();
-    return true;
+function validation() {
+  if (email === "") {
+    form.classList.remove("valid");
+    form.classList.remove("invalid");
+    text.innerHTML = "";
+  } else if (email.match(pattern)) {
+    form.classList.add("valid");
+    form.classList.remove("invalid");
+    text.innerHTML = "Your're Good to go!";
+    text.style.color = "#0f0";
   } else {
-    alert("You have entered an invalid email address!");
-    document.form1.text1.focus();
-    return false;
+    form.classList.remove("valid");
+    form.classList.add("invalid");
+    text.innerHTML = "Please provide a valid email";
+    emailBox.style.borderColor = "hsl(0, 93%, 68%)";
+    errorIcon.style.opacity = "1";
   }
 }
 },{}],"../node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
@@ -165,7 +173,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "55676" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "56061" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

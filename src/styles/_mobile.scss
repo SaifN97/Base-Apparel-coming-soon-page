@@ -18,6 +18,9 @@ main {
   }
 
   .hero-info {
+    .background {
+      display: none;
+    }
     width: 85%;
     margin: 0 auto;
     text-align: center;
@@ -68,6 +71,21 @@ main {
       border-radius: 1.5rem;
       background: $Btn-Gradient;
       box-shadow: -5px 10px 30px $Desaturated-Red;
+    }
+    .text {
+      font-size: 0.8rem;
+      font-weight: 300;
+      position: absolute;
+      top: 3.5rem;
+      left: 2rem;
+      color: $Soft-Red;
+    }
+    .error {
+      color: $Soft-Red;
+      position: absolute;
+      top: 1rem;
+      right: 5rem;
+      opacity: 0;
     }
   }
 }

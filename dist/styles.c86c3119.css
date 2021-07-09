@@ -33,6 +33,9 @@ main {
   margin: 0 auto;
   text-align: center;
 }
+.hero .hero-info .background {
+  display: none;
+}
 .hero .hero-info h1 {
   color: #413a3a;
   font-size: 2rem;
@@ -80,6 +83,21 @@ main {
   background: linear-gradient(135deg, #f8bfbf, #ee8c8c);
   box-shadow: -5px 10px 30px #ce9797;
 }
+.hero .form .text {
+  font-size: 0.8rem;
+  font-weight: 300;
+  position: absolute;
+  top: 3.5rem;
+  left: 2rem;
+  color: #f96262;
+}
+.hero .form .error {
+  color: #f96262;
+  position: absolute;
+  top: 1rem;
+  right: 5rem;
+  opacity: 0;
+}
 
 @media (min-width: 800px) {
   main {
@@ -97,6 +115,7 @@ main {
   }
 
   .hero {
+    position: relative;
     display: flex;
     flex-direction: row-reverse;
     align-items: center;
@@ -112,6 +131,16 @@ main {
   }
   .hero .hero-info p {
     padding: 0.2em 0 1.5em 0;
+  }
+  .hero .hero-info .background {
+    display: block;
+    width: 60%;
+    overflow: hidden;
+    position: absolute;
+    top: -52%;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
   }
 }
 

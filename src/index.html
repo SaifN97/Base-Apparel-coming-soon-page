@@ -4,7 +4,11 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- displays site properly based on user's device -->
-
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      referrerpolicy="no-referrer"
+    />
     <link
       rel="icon"
       type="image/png"
@@ -24,6 +28,9 @@
       <section class="hero">
         <div class="hero-img"></div>
         <div class="hero-info">
+          <div class="background">
+            <img src="./images/bg-pattern-desktop.svg" alt="pattern" />
+          </div>
           <h1>
             <span class="highlight">WE'RE</span> <br />
             COMING <br />
@@ -34,23 +41,26 @@
             store. Add your email below to stay up-to-date with announcements
             and our launch deals.
           </p>
-          <div class="form">
-            <form action="#">
-              <div class="email">
-                <input
-                  type="email"
-                  id="email"
-                  placeholder="Email Address"
-                  required
-                />
-                <button class="btn">
-                  <img src="/images/icon-arrow.svg" alt="arrow" />
-                </button>
+          <form class="form" action="#">
+            <div class="email">
+              <input
+                type="email"
+                id="email"
+                placeholder="Email Address"
+                required
+              />
+              <button class="btn">
+                <img src="/images/icon-arrow.svg" alt="arrow" />
+              </button>
+              <span class="text"></span>
+              <div class="error">
+                <i class="fas fa-exclamation-circle"></i>
               </div>
-            </form>
-          </div>
+            </div>
+          </form>
         </div>
       </section>
     </main>
+    <script src="scripts.js"></script>
   </body>
 </html>
