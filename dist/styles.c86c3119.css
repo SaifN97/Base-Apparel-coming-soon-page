@@ -106,8 +106,9 @@ main {
 
   #logo {
     position: absolute;
-    left: 113px;
-    padding: 1.5em;
+    top: 50px;
+    left: 180px;
+    padding: 0.5em;
     width: 200px;
   }
   #logo img {
@@ -115,7 +116,6 @@ main {
   }
 
   .hero {
-    position: relative;
     display: flex;
     flex-direction: row-reverse;
     align-items: center;
@@ -126,21 +126,44 @@ main {
     height: 100vh;
   }
   .hero .hero-info {
-    width: 35%;
+    width: 60%;
+    height: 100%;
+    position: relative;
     text-align: left;
   }
+  .hero .hero-info .container {
+    width: 61%;
+    margin: 0 auto;
+  }
+  .hero .hero-info h1 {
+    letter-spacing: 23px;
+    font-size: 4rem;
+    padding-top: 2.5em;
+  }
   .hero .hero-info p {
-    padding: 0.2em 0 1.5em 0;
+    padding: 1.5em 0;
+    font-size: 1.5rem;
   }
   .hero .hero-info .background {
     display: block;
-    width: 60%;
-    overflow: hidden;
     position: absolute;
-    top: -52%;
-    left: 0;
-    bottom: 0;
+    width: 100%;
+    height: 100%;
+    top: -5%;
     z-index: -1;
+  }
+  .hero .hero-info .background img {
+    width: 100%;
+    height: 100%;
+  }
+  .hero .hero-info .form {
+    width: 80%;
+  }
+  .hero .hero-info .form input {
+    font-size: 1.2rem;
+  }
+  .hero .hero-info .form .btn {
+    padding: 1em 3em;
   }
 }
 
